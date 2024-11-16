@@ -1,7 +1,7 @@
 # Nakliye-proje
 
-<p>Global olarak her türlü yükün taşınabileceği bir nakliye programının front-end tasarımıdır</p>
+Global olarak her türlü yükün taşınabileceği bir nakliye programının front-end tasarımıdır.
 
-<h3>Ekran Görüntüsü</h3>
+### Ekran Görüntüsü
 
-![](Yukyolda.gif)
+![Yuk Yolda](Yukyolda.gif)
