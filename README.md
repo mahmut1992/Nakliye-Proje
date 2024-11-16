@@ -1,4 +1,4 @@
-# Nakliye-proje
+# Nakliye Projesi
 
 Global olarak her türlü yükün taşınabileceği bir nakliye programının front-end tasarımıdır.
 
