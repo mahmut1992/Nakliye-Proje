@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YükYolda</title>
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- !HEADER -->
+    <header>
+      <div class="header-wrapper">
+        <div class="phone-span">
+          <i class="fa-solid fa-phone"></i>
+          <span>0537 499 59 10</span>
+        </div>
+        <div class="mail-span">
+          <i class="fa-solid fa-envelope"></i>
+          <span>destek@yukyolda.com</span>
+        </div>
+      </div>
+    </header>
+    <!--!NAVİGATİON  -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="images">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Logo"
+          />
+        </a>
+        <div class="navbar">
+          <a href="#">Anasayfa</a>
+          <a href="#">İş Tahtası</a>
+          <a href="#">Konum Bırak</a>
+          <a href="#">Blog</a>
+          <a href="#">İletişim</a>
+        </div>
+        <div class="buttons">
+          <button class="entrance"><span>GİRİŞ</span></button>
+          <button class="signin"><span>KAYDOL</span></button>
+          <i class="fa-solid fa-bars" id="fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- !HOME -->
+    <main>
+      <div class="main-wrapper">
+        <h3>Şehirler Arası Nakliyat İşlerinde Profesyonel Çözüm</h3>
+        <p>
+          Türkiye'nin 81 ilini kapsayan geniş lojistik ağımız ile istediğiniz
+          araç ve şoföre anında kavuşun
+        </p>
+        <div class="buttons">
+          <button class="btn">
+            <div class="btn-container"><i class="fa-solid fa-truck"></i><span>ARAÇ BUL</span></div>
+            <div>
+            </button>
+            <button class="btn">
+                <div class="btn-container"><i class="fa-solid fa-truck-ramp-box"></i><span>YÜKBUL</span></div>
+            </button>
+            </div>
+          </div>
+          <div class="animation-box">
+            <div class="animation-box1"></div>
+            <div class="animation-box2"></div>
+            <div class="animation-box3"></div>
+          </div>
+          <div class="whatsapp-img">
+            <img src="https://yoldalastiktamiri.com/upload/img/whatsapp.png" alt="">
+          </div>
+    
+    </main>
+    <!--!SECTİON  1 -->
+    <section>
+        <div class="section-wrapper">
+            <div class="box">
+                <div class="box-wrapper">
+                    <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>Hızlı Araç Erişimi</h3>
+                    <p>Geniş lojistik ağımız sayesinde, şehirler arası nakliyat işleriniz için istediğiniz araç ve şoföre anında kavuşun.</p>
+                </div>
+            </div>
+        
+        <div class="box">
+            <div class="box-wrapper">
+                <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Hızlı Araç Erişimi</h3>
+                <p>Geniş lojistik ağımız sayesinde, şehirler arası nakliyat işleriniz için istediğiniz araç ve şoföre anında kavuşun.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-wrapper">
+                <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Hızlı Araç Erişimi</h3>
+                <p>Geniş lojistik ağımız sayesinde, şehirler arası nakliyat işleriniz için istediğiniz araç ve şoföre anında kavuşun.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-wrapper">
+                <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Hızlı Araç Erişimi</h3>
+                <p>Geniş lojistik ağımız sayesinde, şehirler arası nakliyat işleriniz için istediğiniz araç ve şoföre anında kavuşun.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-wrapper">
+                <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Hızlı Araç Erişimi</h3>
+                <p>Geniş lojistik ağımız sayesinde, şehirler arası nakliyat işleriniz için istediğiniz araç ve şoföre anında kavuşun.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-wrapper">
+                <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Hızlı Araç Erişimi</h3>
+                <p>Geniş lojistik ağımız sayesinde, şehirler arası nakliyat işleriniz için istediğiniz araç ve şoföre anında kavuşun.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- !SECTİON 2 -->
+     <section class="section-two">
+        <div class="section-two-container">
+            <div class="section-two-container-box">
+                <div class="p1"><p>Siz de taşıyıcı olarak YUKYOLDA.COM ailesine katılıp, aracınıza uygun, gidiş ve dönüş yükü alabilirsiniz. Aynı zamanda çok uygun yakıt imkanından ve diğer avantajlardan da yararlanabilirsiniz.</div>
+
+                </p>
+                <div class="p2"><p>Hemen bize katılmak ve iş ortağımız olup, iş hacminizi yükseltmek ister misiniz?</p></div>
+                <button class="btn">BİZE KATIL</button>
+            </div>
+        </div>
+     </section>
+     <!-- !SECTİON  3 -->
+      <section class="section-tree">
+<div class="image-one">
+    <img src="https://www.yukyolda.com/resimler/uygulama-yukyolda.webp" alt="">
+</div>
+<div class="content">
+    <h3>YukYolda Mobil Uygulaması Artık Cebinde!</h3>
+    <p>Türkiye'nin hangi ilinde olursanız olun YukYolda Mobil Uygulaması sayesinde konumunuza en yakın ve karlı iş imkanları artık cebinizde.
+
+        Hemen uygulamayı indir ve böylece iş ilanlarına daha kolay ulaş ve rahat teklif ver.
+        
+        Yukyolda mobil uygulaması ile konumuna yakın yeni bir iş imkanı olduğunda, sen farketmesen bile müşteri hizmetlerimiz sizi arayıp bilgilendirir. Böylece tüm karlı işlerden ilk sen haberdar olursun!
+        
+        Daha pek çok avantajdan faydalanabilmek için aşağıdaki butona basarak YukYolda mobil uygulamasını hemen indir!</p>
+        <div class="button-one">
+            <button>
+                UYGULAMAYI İNDİR
+            </button>
+        </div>
+</div>
+      </section>
+      <!-- !PARAGRAPH -->
+      <section class="section-four">
+       <h3>Şehirler Arası Nakliyat</h3>
+       <p>Şehirler arası nakliyat alanında hizmet veren yukyolda.com, Türkiye'nin 81 ilini ve tüm ilçelerini kapsayan geniş bir lojistik ağa sahiptir. Firmamız, gelişmiş dijital altyapısı ile giderlerini en aza düşürerek sizlere şehirler arası nakliye konusunda en kaliteli hizmeti en uygun fiyata sunmaktadır.
+
+        Yukyolda.com ailesi; Şehirler arası nakliyat alanında yükü olan, fabrika ve firmaların kendilerine en yakın araçları bulmalarını sağlar ve yük taşıyan tır ve kamyonların da aradıkları gidiş ve dönüş yüküne ulaşmalarına fırsat sunar.
+        
+        Yukyolda.com bünyesinde 10.000 den fazla kamyon ve tır mevcuttur. Başta 13.60 Tır, Kırkayak, 10 Teker, 6 Teker, 4 Teker ve 8.60 Kamyon, Lowbed olmak üzere her türlü açık ve kapalı kasa veya termokinli aracımız mevcuttur. Envanterimizde, şehirler arası nakliye işleriniz için ihtiyaç duyabileceğiniz tüm araçlar mevcuttur.
+        
+        Yukyolda.com ailesi nakliye hizmetleri için müşteri memnuniyetini temel prensib olarak benimsemiş bir firmadır. Hedefimiz şehirlerarası nakliyat konusunda hiç bir aracımızı yüksüz ve hiç bir müşterimizi de araçsız bırakmamaktır.
+        
+        Profosyonel nakliyenin doğru adresi olan Yukyolda.com; müşterilerin iş hacmini artırmaya ve işletmeleri geliştirmeye katkı sağlar. Böylelikle yukyolda.com ailesi olarak nakliye alanında ülkeye büyük bir değer katmanın mutluluğunu yaşamaktayız.
+        
+        Yukyolda.com ailesi şehirler arası nakliyat alanında yükü olan, yük veren, fabrika ve şirketlerin kendilerine en yakın kamyonları bulmalarını sağlar ve yük taşıyan nakliye firmalarının da aradıkları gerek gidiş yükü, gerekse dönüş yükünü beklemeden bir an evvel ulaşmalarına imkan sunar. Ayrıca bizimle çalışan tüm kamyoncularımızın ve nakliye firmalarımızın iş hacmini artırmayı amaçlamaktayız.
+        
+        Yukyolda.com; Türkiye'nin 81 ilinde faaliyet gösteren, şehirler arası nakliyat hizmeti veren geniş bir lojistik ağa sahiptir. Bu lojistik ağ içerisinde yüzlerce kamyon ve şoför bulunmaktadır. Yukyolda.com olarak tüm bu lojistik işlerin takibini yapmakta ve yük taşıyan ile yük vereni buluşturmaktayız.
+        
+        Ülkemizin 81 ilinde oluşturduğumuz lojistik ağ ve sahip olduğumuz dijital platform sayesinde girdi masraflarını en aza indirerek siz değerli müşterilerimize şehirler arası nakliyat alanında en uygun nakliye imkanını sunmaktayız. Bizler yukyolda.com olarak çok geniş bir araç kapasitesi ve şoför sayısına sahibiz.
+        
+        Araçlarımıza tüm illerden geri dönüş yükleri temin etmekteyiz böylece parsiyel ve tam yük taşımalarında yüklerinize uygun aracı sizin için kolaylıkla temin edebilmekteyiz. Üstelik hiç bir aracımızı yüksüz bırakmadığımız için yakıt giderlerinin mimimum seviyede kalmasını sağlıyor ve böylece sizin için en uygun nakliye fiyatını sunuyoruz. Aynı zamanda üstün müşteri anlayışımızla siz değerli müşterilerimizin memnun kalması için tüm gücümüzle çalışıyoruz.</p>
+       <h3>Şehirler Arası Nakliye Fiyatları</h3>
+       <p>Günümüz ticari koşullarında işletmeler mevcut yüklerinin taşınması için bir takım kriterleri göz önünde bulundurmakta ve artan nakliye fiyatları nedeniyle en uygun nakliye seçeneğine kavuşmak istemektedir. Çünkü taşınacak yükün hem güvenli hem de ekonomik bir şekilde taşınması işletmeler için temel hedeftir.
+
+        Şehirler arası nakliye fiyatları taşınacak yükün cinsine, miktarına ve mesafeye göre değişiklik göstermektedir. Yukyolda.com olarak bu konuda müşterilerimize daima en iyi fiyat teklifini sunmaktayız. Bunun için hemen bizimle iletişime geçerek yükünüz için en uygun fiyat teklifini alabilirsiniz.
+        </p>
+       <h3>Şehirler Arası Nakliye Firmaları</h3>
+       <p>İşletme ve firmaların karayollarında yüklerini taşıtmak istediğinde dikkat etmesi gereken bazı önemli hususlar vardır. Bu hususlara dikkat edilmediği takdirde istenmedik mağduriyetler meydana gelebilmektedir. Bunlardan birincisi yüklerine uygun doğru araç ve şoför seçimidir.
+
+        Bilindiği üzere yük taşıyan her aracın farklı özellikleri vardır ve her araç her yükü taşımak için uygun olmayabilmektedir. Uygun araç seçilmediği takdirde yükünüz kırılabilmekte, ezilebilmekte ya da hasar alıp zarar görebilmektedir. Bu nedenle yükünüze en uygun araç seçiminin yapılması gerekmektedir.
+        
+        Bir diğer önemli husus şehirlerarası nakliyat için doğru şoförün temin edilebilmesidir. Yeterli belge ve yetkilere sahip olmayan bir şoför istenmedik olumsuzluklara neden olabilmektedir. Her şoför yalnızca sahip olduğu belgeye göre taşıma yapabilmektedir.</p>
+       <h3>Şehirlerarası Nakliyat Alanında Profesyonel Adres: Yukyolda.com</h3>
+       <p>Yukyolda.com; şehirler arası nakliyat alanında yük veren ve yük taşıyan paydaşları ortak amaçları için biraraya getiren dijital bir platformdur.
+
+        Yukyolda.com ailesi, 7/24 müşteri destek hattı ve geliştirmekte olduğumuz tüm teknolojik alt yapı hizmetleri ile; nakliye firmaları, kamyoncular, tırcılar, yük veren tüm fabrika ve şirketlerin her türlü yükünü, deneyimli ve tam yetkin şoför ağı ile istenilen noktaya taşımayı amaçlamaktadır.
+        
+        Siz değerli müşterilerimiz yükünüz için hangi araç ve şoförü seçeceğinizi düşünmenize gerek yoktur. Çünkü yukyolda.com ailesi olarak bizler bu sorumluluğu sizin adınıza üstleniyor ve yükünüze en uygun araç ve şoförü size yönlendiriyoruz. Bunun için hemen bizimle iletişime geçebilirsiniz.
+        
+        Nakliyat ihtiyaçları, yük taşımacılığı yapmak isteyen işletmeler için son derece önemlidir. Her işletme, değerli yüklerini güvenli ve sorunsuz bir şekilde taşıtmak, olumsuzlukları minimuma indirgemek ve hizmet kalitesini en üst düzeye çıkarmak ister. Ancak, en uygun ve gerçekten en iyi nakliye firması'nı seçmek karmaşık ve deneyim gerektiren bir süreçtir.
+        
+        İşte burada devreye giren yukyolda.com olarak, şehirlerarası nakliye konusundaki uzmanlığımızla sizlere yardımcı oluyoruz. Yüklerinizin güvenliğini sağlamak, taşıma sürecini kolaylaştırmak ve en kaliteli hizmeti almanızı sağlamak için buradayız.</p>
+      </section>
+      <!-- !FOOTER -->
+       <footer>
+        <div class="footer-container">
+            <div class="hero">
+                <a href="#">Hakkımızda</a>
+                <a href="#">Hizmet Noktaları</a>
+                <a href="#">İletişim</a>
+            </div>
+            <div class="empty-border"></div>
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-google-play"></i>
+                <span>YükYolda Google Play Stor</span>
+            </div>
+            <p>Made By Fırat ŞABAHAT</p>
+        </div>
+       </footer>
+       <script src="script.js"></script>
+  </body>
+</html>

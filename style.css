@@ -1,0 +1,529 @@
+/* Font Family İmport */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Css Sıfırlama */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  overflow-x: none;
+}
+body {
+  font-family: "Poppins", serif;
+}
+section {
+  padding: 15px 45px;
+  width: 100%;
+  min-height: 80vh;
+}
+.btn {
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.btn:hover {
+  transform: scale(1.2);
+  transition: all 0.6s ease;
+}
+/* !Header  */
+header {
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid red;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 45px;
+}
+.header-wrapper .phone-span,
+.mail-span {
+  color: #fff;
+  font-size: 14px;
+}
+.phone-span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.mail-span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* !Navigation */
+
+nav {
+  height: 110px;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 45px;
+  position: relative;
+}
+nav .images {
+  height: 80px;
+  width: 100px;
+}
+nav .images img {
+  height: 80px;
+  width: 80px;
+}
+nav .images img:hover {
+  transform: scale(1.2);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar a {
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: all 0.6s ease;
+}
+
+.navbar a:hover {
+  border-color: red;
+  padding: 5px;
+}
+nav .buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav .buttons .entrance {
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-weight: bolder;
+}
+nav .buttons .signin {
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-weight: bolder;
+}
+nav .buttons i {
+  color: #fff;
+  font-size: 40px;
+  display: none;
+  cursor: pointer;
+}
+nav .entrance:hover {
+  transform: scale(1.2);
+}
+nav .signin:hover {
+  transform: scale(1.2);
+}
+nav .buttons span {
+  font-weight: bolder;
+}
+/* !HOME */
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(https://www.yukyolda.com/resimler/yukyolda2.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.main-wrapper {
+  padding: 15px 45px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: flex-start;
+  padding: 20% 0 0 45px;
+}
+.main-wrapper h3 {
+  color: #fff;
+  font-size: 35px;
+  width: 60%;
+  font-weight: bold;
+}
+.main-wrapper p {
+  color: #ededed;
+  font-size: 20px;
+  width: 60%;
+  margin-top: 30px;
+  font-weight: lighter;
+}
+.main-wrapper .buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+.main-wrapper .buttons .btn {
+  width: 130px;
+}
+.main-wrapper .buttons .btn span {
+  font-weight: bolder;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.animation-box {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  color: #0088cc;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 5;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.5s;
+}
+
+.animation-box1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(242, 0, 0, 0.85);
+  border: 2px solid red;
+  border-radius: 100%;
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+  opacity: 0.1;
+  color: #0088cc;
+  animation: animation-box1 1.2s ease-in-out infinite;
+}
+
+@keyframes animation-box1 {
+  0% {
+    transform: rotate(0) scale(0.5) skew(1deg);
+    opacity: 0.1;
+  }
+  30% {
+    transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(0) scale(1) skew(1deg);
+    opacity: 0.5s;
+  }
+}
+.animation-box2 {
+  background-color: rgba(242, 0, 0, 0.85);
+  opacity: 0.75;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 30px;
+  left: 30px;
+  border: 2px solid red;
+  border-radius: 100%;
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+  color: #0088cc;
+  animation: animation-box2 1.2s ease-in-out infinite;
+}
+@keyframes animation-box2 {
+  0% {
+    transform: rotate(0) scale(0.5) skew(1deg);
+    opacity: 0.1;
+  }
+  30% {
+    transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(0) scale(1) skew(1deg);
+    opacity: 0.5;
+  }
+}
+.animation-box3 {
+  background-color: #0088cc;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAB/ElEQVR42uya7W3CMBCG31QM4A1aNggTlG6QbpBMkHYC1AloJ4BOABuEDcgGtBOETnD9c1ERCH/lwxeaV8oPFGP86Hy+DxMREW5Bd7gRjSDSNGn4/RiAOvm8C0ZCRD5PSkQVXSr1nK/xE3mcWimA1ZV3JYBZCIO4giQANoYxMwYS6+xKY4lT5dJPreWZY+uspqSCKPYN27GJVBDXheVSQe494ksiEWTuMXcu1dld9SARxDX1OAJ4lgjy4zDnFsC076A4adEiRwAZg4hOUSpNoCsBPDGM+HqkNGynYBCuILuWj+dgWysGsNe8nwL4GsrW0m2fxZBq9rW0rNcX5MOQ9eZD8JFahcG5g/iKT671alGAYQggpYWvpEPYWrU/HDTOfeRIX0q2SL3QN4tGhZJukVobQyXYWw7WtLDKDIuM+ZSzscyCE9PCy5IttCvnZNaeiGLNHKuz8ZVh/MXTVu/1xQKmIqLEAuJ0fNo3iG5B51oSkeKnsBi/4bG9gYB/lCytU5G9DryFW+3Gm+JLwU7ehbJrwTjq4DJU8bHcVbEV9dXXqqP6uqO5e2/QZRYJpqu2IUAA4B3tXvx8hgKp05QZW6dJqrLTNkB6vrRURLRwPHqtYgkC3cLWQAcDQGGKH13FER/NATzi786+BPDNjm1dMkfjn2pGkBHkf4D8DgBJDuDHx9BN+gAAAABJRU5ErkJggg==);
+  border: 2px solid #0088cc;
+  border-radius: 100%;
+  opacity: 0.7;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+  color: #0088cc;
+  animation: animation-box3 1s ease-in-out infinite;
+}
+@keyframes animation-box3 {
+  0% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+.whatsapp-img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  z-index: 10;
+}
+.whatsapp-img img {
+  height: 50px;
+  width: 50px;
+}
+
+/* !SECTİON 1 */
+.section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.section-wrapper .box {
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  border: 3px solid red;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  transition: all 0.6s ease;
+}
+.section-wrapper .box:hover {
+  transform: scale(0.8);
+}
+.section-wrapper .box .box-wrapper {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.section-wrapper .box .box-wrapper i {
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  border: 1px solid red;
+  line-height: 2.5;
+  margin-bottom: 60px;
+  border-radius: 50%;
+}
+.section-wrapper .box .box-wrapper h3 {
+  margin-bottom: 20px;
+}
+/* !SECTİON 2 */
+.section-two {
+  padding: unset;
+  width: 100%;
+  height: 600px;
+}
+.section-two-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(https://www.yukyolda.com/resimler/altresim.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section-two-container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20% 5% 0 5%;
+}
+.section-two-container-box p {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+.section-two-container-box .p2 {
+  margin-top: 80px;
+  text-align: center;
+}
+.section-two-container-box .btn {
+  margin-top: 50px;
+  font-weight: bolder;
+}
+/* !SECTİON 3 */
+.section-tree {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+}
+.image-one {
+  height: 400px;
+  width: 200px;
+}
+.image-one img {
+  width: 100%;
+  height: 100%;
+}
+.section-tree .image-one {
+  flex: 1 1 350px;
+}
+.section-tree .content {
+  flex: 1 1 350px;
+}
+.section-tree h3 {
+  margin-bottom: 20px;
+}
+
+.button-one button {
+  font-size: 20px;
+  font-weight: bolder;
+  width: 300px;
+  height: 60px;
+  background-color: rgba(33, 108, 143, 0.719);
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.6s ease;
+}
+.button-one button:hover {
+  transform: scale(1.2);
+}
+/* !PARAGRAPH */
+.section-four h3 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  color: rgba(33, 108, 143, 0.719);
+}
+.section-four p {
+  margin-top: 30px;
+  line-height: 1.8;
+  text-align: center;
+}
+/* !FOOTER */
+footer {
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  height: 170px;
+}
+.footer-container {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+.footer-container .hero {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container .hero a {
+  color: #fff;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.footer-container .hero a:hover {
+  color: #6096af;
+}
+.footer-icons {
+  padding-top: 20px;
+  color: #fff;
+  display: flex;
+  gap: 15px;
+}
+.footer-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.footer-icons i:hover {
+  color: #6096af;
+  transform: scale(1.2);
+}
+.footer-container p {
+  margin-top: 15px;
+  color: #fff;
+}
+.empty-border {
+  border: 1px solid red;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* !RESPONSİVE */
+@media (max-width: 925px) {
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 110px;
+    right: 37px;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid red;
+    background-color: rgba(7, 229, 245, 0.719);
+    border-radius: 10px;
+    width: 150px;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+  }
+  .navbar a {
+    color: black;
+    border-bottom: 1px solid transparent;
+    transition: all 0.6s ease;
+    white-space: nowrap;
+  }
+  .navbar a:hover {
+    border-bottom: 1px solid red;
+    padding: 5px;
+  }
+  nav .buttons .entrance {
+    display: none;
+  }
+  nav .buttons .signin {
+    display: none;
+  }
+  nav .buttons .fa-bars {
+    display: flex;
+  }
+  .navbar.active {
+    display: flex;
+  }
+}
