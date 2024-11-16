@@ -4,4 +4,4 @@
 
 <h3>Ekran Görüntüsü</h3>
 
-! [] (Yukyolda.gif)
+![](Yukyolda.gif)
